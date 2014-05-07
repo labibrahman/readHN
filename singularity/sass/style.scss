@@ -9,7 +9,7 @@
 html {
 	font: {  
 		size: 62.5%;							
-		family: 'Source Sans Pro';				
+		family: SourceSansPro, Source Sans Pro;				
 	}
 }
 
@@ -24,7 +24,8 @@ body {
 	color: $title;
 
 	font: {
-		size: 2.2rem;
+		family: SourceSansPro, Source Sans Pro;
+		size: 2.1rem;
 		weight: 400;
 	}
 
@@ -47,13 +48,14 @@ img[src*="y18.gif"] {
 
 // Creating New Logo Using CSS and HTML
 // Done by injecting HTML
+
 td[style="width:18px;padding-right:4px"] {
-	a[href="http://ycombinator.com/"]::before {
-		display: block;
+	a[href="http://ycombinator.com"]::before {
+		display: block; 
 		content: "Y";
 		color: $title;
 		font: {
-			family: 'Source Sans Pro';
+			family: SourceSansPro, Source Sans Pro;
 			size: 2.2rem;
 			weight: 400;
 		}	
@@ -72,7 +74,6 @@ td[style="width:18px;padding-right:4px"] {
 		}
 	}
 }
-
 
 // Controls thread titles on main page, and actual threads
 // The thread number and actual thread title each have this class
@@ -99,8 +100,13 @@ td[style="width:18px;padding-right:4px"] {
 	color: $subtext;
 
 	a {
-		font-weight: 600;
+		font-weight: 400;
 		color: $subtext;
+		padding: {
+			top: 0.5rem;
+			left: 0.2rem;
+			right: 0.2rem;
+		}
 	}
 
 	a:hover {
@@ -187,6 +193,10 @@ form[action="//hn.algolia.com/"] {
 		width: 30rem;
 		margin-left: 1rem;
 	}
+
+	&:hover{
+		background-color: $background;
+	}
 }
 
 // Comment Box
@@ -196,9 +206,8 @@ textarea[name="text"] {
 	overflow: scroll;
 	resize: vertical;
 	border: 2px solid #dedede;
-	width: 86rem !important;
+	width: 86rem;
 	height: 14rem;
-	//height: 12rem !important;
 	margin-top: 2rem;
 	font: {
 		family: Source Code Pro;
@@ -207,7 +216,7 @@ textarea[name="text"] {
 }
 
 input:focus, textarea:focus {
-	outline: none !important;
+	outline: none;
 	border: 0.2rem solid $hn-orange;
 }
 
@@ -216,7 +225,7 @@ input[value="add comment"] {
 	-webkit-appearance: none;	// Removes default button styling
 
 	font: {
-		family: Source Sans Pro;
+		family: SourceSansPro, Source Sans Pro;
 		size: 2rem;
 	}
 	color: $subtext;
@@ -264,7 +273,7 @@ td[bgcolor="#ff6600"] {
 	left: 0px;
 
 	table {
-		max-width: 86rem;
+		max-width: 96rem;
 		margin: 0 auto;
 	}	
 }
@@ -282,7 +291,7 @@ center {
 // Selects the title class and pads the top of every title by 20px
 td.title {
 	display: block;
-	padding-top: 1.4rem;
+	padding-top: 3rem;
 }
 
 

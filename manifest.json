@@ -1,0 +1,36 @@
+{
+// The name of your plugin
+"name": "readhackernews",
+"manifest_version": 2,
+"version": "1.0",
+
+// Give it a useful description
+"description": "An extension to make Hacker News more readable",
+
+// Permission to Load Source Sans Pro from Google Web Fonts
+"permissions": [
+    "http://fonts.googleapis.com/*",
+    "https://fonts.googleapis.com/*"
+],
+
+"content_scripts": [ {
+	"all_frames": false,
+
+// The sites on which to inject the CSS
+"matches": [ "http://news.ycombinator.com/*", "https://news.ycombinator.com/*" ],
+
+// JS to swap out CSS files
+"js" : [ "singularity/javascripts/swapcss.js", "singularity/javascripts/jquery.js"]
+
+
+//"run_at": "document_start"
+} ],
+
+// Allows JS to reach singularity/stylesheets/style.css
+"web_accessible_resources": ["singularity/stylesheets/style.css"],
+
+// Allows font import from Google Fonts to pass through CORS restrictions
+"content_security_policy": "script-src 'self' https://fonts.googleapis.com; object-src 'self'"
+}
+
+
