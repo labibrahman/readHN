@@ -14,7 +14,7 @@ html {
 }
 
 body {
-	display: block;
+	//display: block;
 	width: 100%;
 	background: $background;
 }
@@ -32,7 +32,7 @@ body {
 		left: 2.6rem;
 	}
 
-	a {
+	a, a:visited{
 		color: $title;
 		padding: {
 			left: 0.5rem;
@@ -60,8 +60,8 @@ td[style="width:18px;padding-right:4px"] {
 		padding: {
 			top: 1rem;
 			bottom: 1rem;
-			left: 1.5rem;
-			right: 1.5rem;
+			left: 2rem;
+			right: 2rem;
 		}	
 		margin: 1.5rem 0rem 1.5rem 0rem;
 		border: {
@@ -112,11 +112,14 @@ td[style="width:18px;padding-right:4px"] {
 	}
 }
 
-
 // Removes default blue color and underline from links from links
 a {
 	text-decoration: none;						
 	color: $title;
+
+	&:visited {
+		color: $visited;
+	}
 }
 
 // Comments
@@ -295,7 +298,12 @@ td.title {
 
 // Pads between votearrow and thread title
 .votearrow {
-	margin-right: 2rem;
+	margin: {
+		right: 2rem;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
 }
 
 // Pads between comments
@@ -323,7 +331,7 @@ td.title {
 // Pads the username text above comments 
 span.comment {
 	display: block;
-	padding-top: 1.3rem;
+	padding-top: 0.5rem;
 }
 
 tr[style="height:10px"]:nth-child(2) {
@@ -348,7 +356,12 @@ tr[style="height:10px"]:last-child {
 
 // Pads between paragraphs:
 p{
-	padding-top: 1.8rem;
+	font-size: 2.2rem;
+	padding-top: 1rem;
+}
+
+td {
+	font-size: 2.2rem;
 }
 
 // Overflows code that exceeds line-lengths
