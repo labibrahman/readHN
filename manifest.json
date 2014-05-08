@@ -20,14 +20,17 @@
 "matches": [ "http://news.ycombinator.com/*", "https://news.ycombinator.com/*" ],
 
 // JS to swap out CSS files
-"js" : [ "singularity/javascripts/swapcss.js", "singularity/javascripts/jquery.js"]
+"js" : [ 
+	"singularity/javascripts/jquery.min.js", 
+	"singularity/javascripts/swapcss.js"],
 
-
-//"run_at": "document_start"
+"run_at": "document_start"
 } ],
 
-// Allows JS to reach singularity/stylesheets/style.css
-"web_accessible_resources": ["singularity/stylesheets/style.css"],
+// Allows JS to reach singularity/stylesheets/ and singularity/javascripts
+"web_accessible_resources": [
+	"singularity/stylesheets/*",
+	"singularity/javascripts/*"],
 
 // Allows font import from Google Fonts to pass through CORS restrictions
 "content_security_policy": "script-src 'self' https://fonts.googleapis.com; object-src 'self'"
