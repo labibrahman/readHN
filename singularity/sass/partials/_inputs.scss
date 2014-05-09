@@ -20,7 +20,7 @@ input:focus, textarea:focus {
 	border: 0.2rem solid $hn-orange;
 }
 
-// Comment Button
+// Comment Button for replying to actual thread
 input[value="add comment"] {
 	-webkit-appearance: none;	// Removes default button styling
 
@@ -43,3 +43,13 @@ input[value="add comment"] {
 
 	margin: 3rem 0 4rem 0;
 }
+
+// Reply button for replying to comments on threads
+input[value="reply"] {
+	@extend input[value="add comment"];
+
+	// Makes the reply button a little wider
+	padding: 1rem 3rem 1rem 3rem;
+}
+
+

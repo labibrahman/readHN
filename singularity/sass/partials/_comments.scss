@@ -1,10 +1,11 @@
 // The first line of a self post is infuriatingly
 // wrapped in just a td tag
+// So it needs to be styled 
 td {
 	font-size: 2.1rem;
 }
 
-// Giving td's font sizes also makes ever br that many px high
+// Giving td's font sizes also makes every br that many px high
 // This breaks almost everything
 br {
 	display: none;
@@ -21,15 +22,10 @@ br {
 	text-decoration:underline;
 }
 
-// Comment Reply 
-font[size="1"] {
-	a {
-		display: block;
-		color: $title;
-		font-size: 1.7rem !important;
-		margin-top: -0.2rem;	// Between parent comment and itself
-		margin-bottom: 1.5rem;	// Between child comment and itself
-	}
+
+// Pads between comments
+.default {
+	padding-bottom: 0.5rem; 
 }
 
 // Within the username text above comments, pads the words
@@ -43,6 +39,7 @@ font[size="1"] {
 		padding-left: 0.2rem; 
 	}
 }
+
 // Pads the username text above comments 
 span.comment {
 	display: block;
@@ -53,7 +50,7 @@ span.comment {
 // Pads between paragraphs:
 p {
 	font-size: 2.1rem;
-	padding-top: 1.4rem;
+	padding-top: 1.8rem;
 }
 
 
@@ -79,4 +76,16 @@ pre {
 
 pre:hover {
 	overflow:auto;
+}
+
+
+// Comment Reply 
+font[size="1"] {
+	a {
+		display: block;
+		color: $title;
+		font-size: 1.7rem !important;
+		margin-top: -0.2rem;	// Between parent comment and itself
+		margin-bottom: 1.5rem;	// Between child comment and itself
+	}
 }

@@ -1,4 +1,13 @@
-// Increase Spacing between Header and Page Content
+// Moves thread title down to prevent overlap with header
+tr[style="height:10px"]:nth-of-type(2) {
+	height: 10rem !important;
+}
+
+tr[style="height:10px"]:last-child {
+	height: 0rem !important;
+}
+
+
 // Selects the title class and pads the top of every title by 20px
 td.title {
 	display: block;

@@ -25,6 +25,10 @@ jQuery(function($) {
 	document.documentElement.insertBefore(link);
 
 	$(document).ready(function() {
+		// The div we grab to move page content down from header also
+		// grabs the reply box and moves it down. Corrects that:
+		// Tried really hard to avoid injecting non-FOUC styles via jQuery but failed in this one instance
+		$('input[value="reply"]').parent().css('margin-top', '-10rem');
 		$('.fouc').css('display', 'block');
 	});
 

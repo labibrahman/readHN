@@ -10,6 +10,7 @@
 @import "partials/footer";
 @import "partials/inputs";
 @import "partials/login";
+@import "partials/replying";
 
 // Text
 // Setting up 1 rem = 10 px
@@ -77,11 +78,4 @@ table[width='85%'] {
 	}
 }
 
-// Moves thread title down to prevent overlap with header
-tr[style="height:10px"]:nth-child(2) {
-	height: 9rem !important;
-}
 
-tr[style="height:10px"]:last-child {
-	height: 0rem !important;
-}
