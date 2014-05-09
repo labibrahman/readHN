@@ -1,73 +1,436 @@
-/*
-Syntax error: File to import not found or unreadable: partials/replying.
-              Load paths:
-                /Users/labibrahman/Git/readhackernews/singularity/sass
-                /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.0.alpha.19/stylesheets
-                /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sassy-maps-0.3.2/stylesheets
-                /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/breakpoint-2.4.2/stylesheets
-                /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/singularitygs-1.2.0/stylesheets
-                Compass::SpriteImporter
-        on line 13 of /Users/labibrahman/Git/readhackernews/singularity/sass/style.scss
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+/* line 2, ../sass/partials/_reset.scss */
+html, body, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Users/labibrahman/Git/readhackernews/singularity/sass/style.scss:13
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/import_node.rb:45:in `import'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/stack.rb:121:in `with_frame'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/stack.rb:79:in `with_base'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/tree/root_node.rb:20:in `render'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.5/lib/sass/engine.rb:274:in `render'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:16:in `render'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/compiler.rb:24:in `compile'
-/Users/labibrahman/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/forwardable.rb:183:in `compile'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:113:in `sass_removed'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:93:in `sass_callback'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `call'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `run_callback'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:69:in `block in listen_callback'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `each'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `listen_callback'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `call'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
-/Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: partials/replying.\A               Load paths:\A                 /Users/labibrahman/Git/readhackernews/singularity/sass\A                 /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.0.alpha.19/stylesheets\A                 /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/sassy-maps-0.3.2/stylesheets\A                 /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/breakpoint-2.4.2/stylesheets\A                 /Users/labibrahman/.rvm/gems/ruby-2.1.1/gems/singularitygs-1.2.0/stylesheets\A                 Compass::SpriteImporter\A         on line 13 of /Users/labibrahman/Git/readhackernews/singularity/sass/style.scss"; }
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../sass/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 28, ../sass/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 32, ../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 35, ../sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 38, ../sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 43, ../sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, ../sass/partials/_header.scss */
+.pagetop {
+  color: #222222;
+  font-size: 2.1rem;
+  font-weight: 400;
+  padding-left: 2.6rem;
+}
+/* line 17, ../sass/partials/_header.scss */
+.pagetop a {
+  color: #222222;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* line 27, ../sass/partials/_header.scss */
+img[src*="y18.gif"] {
+  display: none;
+}
+
+/* line 35, ../sass/partials/_header.scss */
+td[style="width:18px;padding-right:4px"] a[href="http://ycombinator.com"]::before {
+  display: block;
+  content: "Y";
+  color: #222222;
+  font-size: 2.2rem;
+  font-weight: 400;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: #222222;
+  border-radius: 25%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+/* line 64, ../sass/partials/_header.scss */
+td[style="width:18px;padding-right:4px"] a[href="http://ycombinator.com"]::before img {
+  display: none;
+}
+
+/* line 71, ../sass/partials/_header.scss */
+td[bgcolor="#ff6600"] {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+/* line 77, ../sass/partials/_header.scss */
+td[bgcolor="#ff6600"] table {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+/* line 2, ../sass/partials/_titles.scss */
+tr[style="height:10px"]:nth-of-type(2) {
+  height: 10rem !important;
+}
+
+/* line 6, ../sass/partials/_titles.scss */
+tr[style="height:10px"]:last-child {
+  height: 0rem !important;
+}
+
+/* line 12, ../sass/partials/_titles.scss */
+td.title {
+  display: block;
+  padding-top: 1.8rem;
+}
+
+/* line 19, ../sass/partials/_titles.scss */
+.title, .adtitle {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+/* line 27, ../sass/partials/_titles.scss */
+.title a:visited, .adtitle a:visited {
+  color: #b5b5b5;
+}
+
+/* line 33, ../sass/partials/_titles.scss */
+.title:nth-child(1) {
+  color: dimgray;
+}
+
+/* line 39, ../sass/partials/_titles.scss */
+.subtext, .comhead {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: dimgray;
+}
+/* line 46, ../sass/partials/_titles.scss */
+.subtext a, .comhead a {
+  font-weight: 400;
+  color: dimgray;
+  padding-top: 0.5rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+/* line 55, ../sass/partials/_titles.scss */
+.subtext a:hover, .comhead a:hover {
+  text-decoration: underline;
+}
+/* line 59, ../sass/partials/_titles.scss */
+.subtext a:visited, .comhead a:visited {
+  color: #b5b5b5;
+}
+
+/* line 72, ../sass/partials/_titles.scss */
+.title:nth-child(3), .title:nth-child(2) {
+  padding-bottom: 0.5rem;
+  padding-right: 5rem;
+}
+
+/* line 78, ../sass/partials/_titles.scss */
+.votearrow {
+  margin-right: 2rem;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 90, ../sass/partials/_titles.scss */
+.title:nth-child(1) {
+  padding-right: 2rem;
+}
+
+/* line 4, ../sass/partials/_comments.scss */
+td {
+  font-size: 2.1rem;
+}
+
+/* line 10, ../sass/partials/_comments.scss */
+br {
+  display: none;
+}
+
+/* line 16, ../sass/partials/_comments.scss */
+.comment {
+  font-size: 2.1rem;
+  line-height: 1.4;
+}
+
+/* line 21, ../sass/partials/_comments.scss */
+.comment a:link, .comment a:visited {
+  text-decoration: underline;
+}
+
+/* line 27, ../sass/partials/_comments.scss */
+.default {
+  padding-bottom: 0.5rem;
+}
+
+/* line 34, ../sass/partials/_comments.scss */
+.comhead a:nth-child(1) {
+  padding-right: 0.3rem;
+}
+/* line 38, ../sass/partials/_comments.scss */
+.comhead a:nth-child(2) {
+  padding-left: 0.2rem;
+}
+
+/* line 44, ../sass/partials/_comments.scss */
+span.comment {
+  display: block;
+  padding-top: 2rem;
+}
+
+/* line 51, ../sass/partials/_comments.scss */
+p {
+  font-size: 2.1rem;
+  padding-top: 1.8rem;
+}
+
+/* line 58, ../sass/partials/_comments.scss */
+code {
+  font-family: Source Code Pro;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+/* line 68, ../sass/partials/_comments.scss */
+pre {
+  overflow: auto;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+/* line 77, ../sass/partials/_comments.scss */
+pre:hover {
+  overflow: auto;
+}
+
+/* line 84, ../sass/partials/_comments.scss */
+font[size="1"] a {
+  display: block;
+  color: #222222;
+  font-size: 1.7rem !important;
+  margin-top: -0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 3, ../sass/partials/_footer.scss */
+.yclinks {
+  display: block;
+  padding-top: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border-top: 2px solid #222222;
+}
+/* line 11, ../sass/partials/_footer.scss */
+.yclinks a {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+/* line 22, ../sass/partials/_footer.scss */
+form[action="//hn.algolia.com/"] {
+  font-size: 2rem;
+  padding: 1rem;
+}
+/* line 25, ../sass/partials/_footer.scss */
+form[action="//hn.algolia.com/"] input {
+  display: inline-block;
+  color: #222222;
+  font-family: Source Code Pro;
+  font-size: 1.8rem;
+  width: 30rem;
+  margin: 2rem 0 1rem 2rem;
+}
+/* line 36, ../sass/partials/_footer.scss */
+form[action="//hn.algolia.com/"]:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 4, ../sass/partials/_inputs.scss */
+textarea[name="text"] {
+  display: block;
+  overflow: scroll;
+  resize: vertical;
+  border: 2px solid #dedede;
+  width: 86rem;
+  height: 14rem;
+  margin-top: 2rem;
+  font-family: Source Code Pro;
+  font-size: 1.8rem;
+}
+
+/* line 18, ../sass/partials/_inputs.scss */
+input:focus, textarea:focus {
+  outline: none;
+  border: 0.2rem solid #ff6600;
+}
+
+/* line 24, ../sass/partials/_inputs.scss */
+input[value="add comment"], input[value="reply"], input[value="login"], input[value="create account"] {
+  -webkit-appearance: none;
+  font-family: SourceSansPro, Source Sans Pro;
+  font-size: 2rem;
+  color: dimgray;
+  padding: 1rem;
+  border: 2px solid dimgray;
+  background-color: #f1f1f1;
+  margin: 3rem 0 4rem 0;
+}
+/* line 37, ../sass/partials/_inputs.scss */
+input[value="add comment"]:hover, input[value="reply"]:hover, input[value="login"]:hover, input[value="create account"]:hover {
+  cursor: pointer;
+  color: white;
+  border-color: black;
+  background-color: #222222;
+}
+
+/* line 48, ../sass/partials/_inputs.scss */
+input[value="reply"] {
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+/* line 1, ../sass/partials/_login.scss */
+body[alink="#0000be"] {
+  background-color: #f1f1f1;
+  width: 35%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+/* line 6, ../sass/partials/_login.scss */
+body[alink="#0000be"] b {
+  display: block;
+  font-size: 5rem;
+  font-weight: 300;
+  padding: 2rem 0 2rem 0;
+}
+
+/* line 17, ../sass/partials/_login.scss */
+body[alink="#0000be"]::before {
+  display: block;
+  text-align: center;
+  content: "Hacker News";
+  color: white;
+  background: #222222;
+  font-size: 8rem !important;
+  font-weight: 300;
+  padding: 2rem 0 2rem 0;
+}
+
+/* line 35, ../sass/partials/_login.scss */
+input[value="login"], input[value="create account"] {
+  width: 20rem;
+}
+
+/* line 42, ../sass/partials/_login.scss */
+form[action="/y"] > table > tbody > tr > td, form[action="/x"] > table > tbody > tr > td {
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+/* line 48, ../sass/partials/_login.scss */
+form[action="/y"] > table > tbody > tr > td > input:-webkit-autofill, form[action="/x"] > table > tbody > tr > td > input:-webkit-autofill {
+  margin-top: 2rem;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  border: 2px solid dimgray;
+  height: 3rem;
+  width: 20rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+/* line 59, ../sass/partials/_login.scss */
+form[action="/y"] > table > tbody > tr > td > input:-webkit-autofill:focus, form[action="/x"] > table > tbody > tr > td > input:-webkit-autofill:focus {
+  border-color: #ff6600;
+}
+
+/* line 16, ../sass/style.scss */
+html {
+  font-size: 62.5%;
+  font-family: Source Sans Pro, SourceSansPro;
+}
+
+/* line 23, ../sass/style.scss */
+body {
+  width: 100%;
+  background: #f1f1f1;
+}
+
+/* line 29, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #222222;
+}
+/* line 33, ../sass/style.scss */
+a:visited {
+  color: #222222;
+}
+
+/* line 39, ../sass/style.scss */
+.votearrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid gray;
+}
+
+/* line 57, ../sass/style.scss */
+center {
+  display: block;
+  margin: 0 auto;
+  max-width: 96rem;
+}
+
+/* line 63, ../sass/style.scss */
+table[width='85%'] {
+  background-color: #f1f1f1;
+  width: 100% !important;
+  border-left-width: 5rem;
+  border-left-color: #f1f1f1;
+  border-left-style: solid;
+  border-right-width: 5rem;
+  border-right-color: #f1f1f1;
+  border-right-style: solid;
+}
