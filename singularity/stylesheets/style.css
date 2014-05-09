@@ -54,74 +54,84 @@ table {
   border-spacing: 0;
 }
 
-/* line 9, ../sass/style.scss */
-html {
-  font-size: 62.5%;
-  font-family: Source Sans Pro, SourceSansPro;
-}
-
-/* line 16, ../sass/style.scss */
-body {
-  width: 100%;
-  background: #f1f1f1;
-}
-
-/* line 23, ../sass/style.scss */
+/* line 3, ../sass/partials/_header.scss */
 .pagetop {
   color: #222222;
   font-size: 2.1rem;
   font-weight: 400;
   padding-left: 2.6rem;
 }
-/* line 35, ../sass/style.scss */
-.pagetop a, .pagetop a:visited {
+/* line 17, ../sass/partials/_header.scss */
+.pagetop a {
   color: #222222;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 27, ../sass/partials/_header.scss */
 img[src*="y18.gif"] {
   display: none;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 35, ../sass/partials/_header.scss */
 td[style="width:18px;padding-right:4px"] a[href="http://ycombinator.com"]::before {
   display: block;
   content: "Y";
   color: #222222;
   font-size: 2.2rem;
   font-weight: 400;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: #222222;
+  border-radius: 25%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 1.5rem 0rem 1.5rem 0rem;
-  border-width: 0.2rem;
-  border-style: solid;
-  border-color: #222222;
-  border-radius: 25%;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 67, ../sass/partials/_header.scss */
+td[bgcolor="#ff6600"] {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+/* line 73, ../sass/partials/_header.scss */
+td[bgcolor="#ff6600"] table {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+/* line 3, ../sass/partials/_titles.scss */
+td.title {
+  display: block;
+  padding-top: 1.8rem;
+}
+
+/* line 10, ../sass/partials/_titles.scss */
 .title, .adtitle {
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 1.4;
 }
+/* line 18, ../sass/partials/_titles.scss */
+.title a:visited, .adtitle a:visited {
+  color: #b5b5b5;
+}
 
-/* line 87, ../sass/style.scss */
+/* line 24, ../sass/partials/_titles.scss */
 .title:nth-child(1) {
   color: dimgray;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 30, ../sass/partials/_titles.scss */
 .subtext, .comhead {
   font-size: 1.6rem;
   font-weight: 300;
   color: dimgray;
 }
-/* line 100, ../sass/style.scss */
+/* line 37, ../sass/partials/_titles.scss */
 .subtext a, .comhead a {
   font-weight: 400;
   color: dimgray;
@@ -129,57 +139,106 @@ td[style="width:18px;padding-right:4px"] a[href="http://ycombinator.com"]::befor
   padding-left: 0.2rem;
   padding-right: 0.2rem;
 }
-/* line 110, ../sass/style.scss */
+/* line 46, ../sass/partials/_titles.scss */
 .subtext a:hover, .comhead a:hover {
   text-decoration: underline;
 }
-
-/* line 116, ../sass/style.scss */
-a {
-  text-decoration: none;
-  color: #222222;
-}
-/* line 120, ../sass/style.scss */
-a:visited {
+/* line 50, ../sass/partials/_titles.scss */
+.subtext a:visited, .comhead a:visited {
   color: #b5b5b5;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 63, ../sass/partials/_titles.scss */
+.title:nth-child(3), .title:nth-child(2) {
+  padding-bottom: 0.5rem;
+  padding-right: 5rem;
+}
+
+/* line 69, ../sass/partials/_titles.scss */
+.votearrow {
+  margin-right: 2rem;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 81, ../sass/partials/_titles.scss */
+.title:nth-child(1) {
+  padding-right: 2rem;
+}
+
+/* line 3, ../sass/partials/_comments.scss */
+td {
+  font-size: 2.1rem;
+}
+
+/* line 9, ../sass/partials/_comments.scss */
+br {
+  display: none;
+}
+
+/* line 15, ../sass/partials/_comments.scss */
 .comment {
   font-size: 2.1rem;
   line-height: 1.4;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 20, ../sass/partials/_comments.scss */
 .comment a:link, .comment a:visited {
   text-decoration: underline;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 26, ../sass/partials/_comments.scss */
 font[size="1"] a {
   display: block;
   color: #222222;
   font-size: 1.7rem !important;
-  margin-top: -0.8rem;
+  margin-top: -0.2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* line 145, ../sass/style.scss */
+/* line 38, ../sass/partials/_comments.scss */
+.comhead a:nth-child(1) {
+  padding-right: 0.3rem;
+}
+/* line 42, ../sass/partials/_comments.scss */
+.comhead a:nth-child(2) {
+  padding-left: 0.2rem;
+}
+
+/* line 47, ../sass/partials/_comments.scss */
+span.comment {
+  display: block;
+  padding-top: 2rem;
+}
+
+/* line 54, ../sass/partials/_comments.scss */
+p {
+  font-size: 2.1rem;
+  padding-top: 1.4rem;
+}
+
+/* line 61, ../sass/partials/_comments.scss */
 code {
   font-family: Source Code Pro;
   font-size: 1.4rem;
   line-height: 1.3;
 }
 
-/* line 154, ../sass/style.scss */
-.votearrow {
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 8px solid gray;
+/* line 71, ../sass/partials/_comments.scss */
+pre {
+  overflow: auto;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+  max-width: 800px;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 80, ../sass/partials/_comments.scss */
+pre:hover {
+  overflow: auto;
+}
+
+/* line 3, ../sass/partials/_footer.scss */
 .yclinks {
   display: block;
   padding-top: 2rem;
@@ -187,18 +246,18 @@ code {
   font-size: 1.5rem;
   border-top: 2px solid #222222;
 }
-/* line 173, ../sass/style.scss */
+/* line 11, ../sass/partials/_footer.scss */
 .yclinks a {
   padding-left: 0.3rem;
   padding-right: 0.3rem;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 22, ../sass/partials/_footer.scss */
 form[action="//hn.algolia.com/"] {
   font-size: 2rem;
   padding: 1rem;
 }
-/* line 187, ../sass/style.scss */
+/* line 25, ../sass/partials/_footer.scss */
 form[action="//hn.algolia.com/"] input {
   display: inline-block;
   color: #222222;
@@ -207,12 +266,12 @@ form[action="//hn.algolia.com/"] input {
   width: 30rem;
   margin-left: 1rem;
 }
-/* line 198, ../sass/style.scss */
+/* line 36, ../sass/partials/_footer.scss */
 form[action="//hn.algolia.com/"]:hover {
   background-color: #f1f1f1;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 4, ../sass/partials/_inputs.scss */
 textarea[name="text"] {
   display: block;
   overflow: scroll;
@@ -225,14 +284,14 @@ textarea[name="text"] {
   font-size: 1.8rem;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 18, ../sass/partials/_inputs.scss */
 input:focus, textarea:focus {
   outline: none;
   border: 0.2rem solid #ff6600;
 }
 
-/* line 225, ../sass/style.scss */
-input[value="add comment"] {
+/* line 24, ../sass/partials/_inputs.scss */
+input[value="add comment"], input[value="login"], input[value="create account"] {
   -webkit-appearance: none;
   font-family: SourceSansPro, Source Sans Pro;
   font-size: 2rem;
@@ -240,16 +299,92 @@ input[value="add comment"] {
   padding: 1rem;
   border: 2px solid dimgray;
   background-color: #f1f1f1;
+  margin: 3rem 0 4rem 0;
 }
-/* line 237, ../sass/style.scss */
-input[value="add comment"]:hover {
+/* line 37, ../sass/partials/_inputs.scss */
+input[value="add comment"]:hover, input[value="login"]:hover, input[value="create account"]:hover {
   cursor: pointer;
   color: white;
   border-color: black;
   background-color: #222222;
 }
 
-/* line 253, ../sass/style.scss */
+/* line 1, ../sass/partials/_login.scss */
+body[alink="#0000be"] {
+  background-color: #f1f1f1;
+  width: 35%;
+  margin: 0 auto;
+}
+/* line 6, ../sass/partials/_login.scss */
+body[alink="#0000be"] b {
+  display: block;
+  font-size: 5rem;
+  font-weight: 300;
+  padding: 2rem 0 2rem 0;
+}
+
+/* line 17, ../sass/partials/_login.scss */
+body[alink="#0000be"]::before {
+  display: block;
+  content: "Y";
+  color: #222222;
+  font-size: 2.2rem;
+  font-weight: 400;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: #222222;
+  border-radius: 25%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+/* line 49, ../sass/partials/_login.scss */
+input[value="login"], input[value="create account"] {
+  width: 20rem;
+}
+
+/* line 16, ../sass/style.scss */
+html {
+  font-size: 62.5%;
+  font-family: Source Sans Pro, SourceSansPro;
+}
+
+/* line 23, ../sass/style.scss */
+body {
+  width: 100%;
+  background: #f1f1f1;
+}
+
+/* line 29, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #222222;
+}
+/* line 33, ../sass/style.scss */
+a:visited {
+  color: #222222;
+}
+
+/* line 39, ../sass/style.scss */
+.votearrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid gray;
+}
+
+/* line 57, ../sass/style.scss */
+center {
+  display: block;
+  margin: 0 auto;
+  max-width: 96rem;
+}
+
+/* line 63, ../sass/style.scss */
 table[width='85%'] {
   background-color: #f1f1f1;
   width: 100% !important;
@@ -261,100 +396,12 @@ table[width='85%'] {
   border-right-style: solid;
 }
 
-/* line 271, ../sass/style.scss */
-td[bgcolor="#ff6600"] {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-}
-/* line 276, ../sass/style.scss */
-td[bgcolor="#ff6600"] table {
-  max-width: 96rem;
-  margin: 0 auto;
-}
-
-/* line 282, ../sass/style.scss */
-center {
-  display: block;
-  margin: 0 auto;
-  max-width: 96rem;
-}
-
-/* line 293, ../sass/style.scss */
-td.title {
-  display: block;
-  padding-top: 1.8rem;
-}
-
-/* line 300, ../sass/style.scss */
-.votearrow {
-  margin-right: 2rem;
-  margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* line 310, ../sass/style.scss */
-.default {
-  padding-top: 2rem;
-}
-
-/* line 317, ../sass/style.scss */
-.title:nth-child(1) {
-  padding-right: 2rem;
-}
-
-/* line 325, ../sass/style.scss */
-.title:nth-child(3), .title:nth-child(2) {
-  padding-bottom: 0.5rem;
-  padding-right: 5rem;
-}
-
-/* line 332, ../sass/style.scss */
-span.comment {
-  display: block;
-  padding-top: 0.5rem;
-}
-
-/* line 337, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 tr[style="height:10px"]:nth-child(2) {
   height: 9rem !important;
 }
 
-/* line 341, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 tr[style="height:10px"]:last-child {
-  height: 4rem !important;
-}
-
-/* line 348, ../sass/style.scss */
-.comhead a:nth-child(1) {
-  padding-right: 0.3rem;
-}
-/* line 352, ../sass/style.scss */
-.comhead a:nth-child(2) {
-  padding-left: 0.2rem;
-}
-
-/* line 358, ../sass/style.scss */
-p {
-  font-size: 2.2rem;
-  padding-top: 1rem;
-}
-
-/* line 363, ../sass/style.scss */
-td {
-  font-size: 2.2rem;
-}
-
-/* line 369, ../sass/style.scss */
-pre {
-  overflow: auto;
-  padding-left: 1rem;
-  padding-bottom: 1.5rem;
-  max-width: 800px;
-}
-
-/* line 378, ../sass/style.scss */
-pre:hover {
-  overflow: auto;
+  height: 0rem !important;
 }

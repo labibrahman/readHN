@@ -1,0 +1,85 @@
+// Increase Spacing between Header and Page Content
+// Selects the title class and pads the top of every title by 20px
+td.title {
+	display: block;
+	padding-top: 1.8rem;
+}
+
+// Controls thread titles on main page, and actual threads
+// The thread number and actual thread title each have this class
+.title, .adtitle {
+	font: {
+		weight: 400;	
+		size: 2.2rem;
+	}
+
+	line-height: 1.4;
+
+	a:visited {
+		color: $visited;
+	}						
+}
+
+// Makes the thread number grey instead of black
+.title:nth-child(1) {
+	color: $subtext;
+}
+
+// Controls the text below thread titles that contains username, points, comment links
+// Controls url stubs at the end of thread titles
+.subtext, .comhead {
+	font: {
+		size: 1.6rem;
+		weight: 300;
+	}
+	color: $subtext;
+
+	a {
+		font-weight: 400;
+		color: $subtext;
+		padding: {
+			top: 0.5rem;
+			left: 0.2rem;
+			right: 0.2rem;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:visited {
+			color: $visited;
+		}
+	}
+
+}
+
+
+
+// Adds padding to the subtext below the titles
+// For main page, title text is 3rd child
+// For thread page, title text is 2nd child
+
+.title:nth-child(3), .title:nth-child(2) {
+	padding-bottom: 0.5rem;
+	padding-right: 5rem;
+}
+
+// Pads between votearrow and thread title
+.votearrow {
+	margin: {
+		right: 2rem;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
+
+
+
+// Pads between vote arrow and thread number
+.title:nth-child(1) {
+	padding-right: 2rem;
+}
+
+

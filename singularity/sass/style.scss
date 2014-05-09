@@ -4,6 +4,13 @@
 @import "partials/fonts";
 @import "partials/colors";
 
+@import "partials/header";
+@import "partials/titles";
+@import "partials/comments";
+@import "partials/footer";
+@import "partials/inputs";
+@import "partials/login";
+
 // Text
 // Setting up 1 rem = 10 px
 html {
@@ -14,102 +21,8 @@ html {
 }
 
 body {
-	//display: block;
 	width: 100%;
 	background: $background;
-}
-
-// Text in header
-.pagetop {
-	color: $title;
-
-	font: {
-		size: 2.1rem;
-		weight: 400;
-	}
-
-	padding: {
-		left: 2.6rem;
-	}
-
-	a, a:visited{
-		color: $title;
-		padding: {
-			left: 0.5rem;
-			right: 0.5rem;
-		}
-	}
-}
-// Hiding Current Logo
-img[src*="y18.gif"] {
-	display: none;
-}
-
-// Creating New Logo Using CSS and HTML
-// Done by injecting HTML
-
-td[style="width:18px;padding-right:4px"] {
-	a[href="http://ycombinator.com"]::before {
-		display: block; 
-		content: "Y";
-		color: $title;
-		font: {
-			size: 2.2rem;
-			weight: 400;
-		}	
-		padding: {
-			top: 1rem;
-			bottom: 1rem;
-			left: 2rem;
-			right: 2rem;
-		}	
-		margin: 1.5rem 0rem 1.5rem 0rem;
-		border: {
-			width: 0.2rem;
-			style: solid;
-			color: $title;
-			radius: 25%;
-		}
-	}
-}
-
-// Controls thread titles on main page, and actual threads
-// The thread number and actual thread title each have this class
-.title, .adtitle {
-	font: {
-		weight: 400;	
-		size: 2.2rem;
-	}	
-	line-height: 1.4;						
-}
-
-// Make thread number grey instead of black
-.title:nth-child(1) {
-	color: $subtext;
-}
-
-// Controls the text below thread titles that contains username, points, comment links
-// Controls url stubs at the end of thread titles
-.subtext, .comhead {
-	font: {
-		size: 1.6rem;
-		weight: 300;
-	}
-	color: $subtext;
-
-	a {
-		font-weight: 400;
-		color: $subtext;
-		padding: {
-			top: 0.5rem;
-			left: 0.2rem;
-			right: 0.2rem;
-		}
-	}
-
-	a:hover {
-		text-decoration: underline;
-	}
 }
 
 // Removes default blue color and underline from links from links
@@ -118,36 +31,8 @@ a {
 	color: $title;
 
 	&:visited {
-		color: $visited;
-	}
-}
-
-// Comments
-.comment {
-	font-size: 2.1rem;
-	line-height: 1.4;
-}
-.comment a:link, .comment a:visited {
-	text-decoration:underline;
-}
-
-// Comment Replies
-font[size="1"] {
-	a {
-		display: block;
 		color: $title;
-		font-size: 1.7rem !important;
-		margin-top: -0.8rem;
 	}
-}
-
-// Code Samples 
-code {
-	font: {
-		family: Source Code Pro;
-		size: 1.4rem;
-	}
-	line-height: 1.3;
 }
 
 // Replaces .gif based vote arrow with css triangle
@@ -160,95 +45,20 @@ code {
 } 
 
 
-// Footer
-
-.yclinks {
-	display: block;
-	padding-top: 2rem;
-	font: {
-		weight: 400;
-		size: 1.5rem;
-	}
-
-	a {
-		padding: {
-			left: 0.3rem;
-			right: 0.3rem;
-		}
-	}
-
-	border-top: 2px solid $title;
-}
-
-// "Search" and its text box
-form[action="//hn.algolia.com/"] {
-	font-size: 2rem;
-	padding: 1rem;
-	input {
-		display: inline-block;
-		color: $title;
-		font: {
-			family: Source Code Pro;
-			size: 1.8rem;
-		}
-		width: 30rem;
-		margin-left: 1rem;
-	}
-
-	&:hover{
-		background-color: $background;
-	}
-}
-
-// Comment Box
-
-textarea[name="text"] {
-	display: block;
-	overflow: scroll;
-	resize: vertical;
-	border: 2px solid #dedede;
-	width: 86rem;
-	height: 14rem;
-	margin-top: 2rem;
-	font: {
-		family: Source Code Pro;
-		size: 1.8rem;
-	}
-}
-
-input:focus, textarea:focus {
-	outline: none;
-	border: 0.2rem solid $hn-orange;
-}
-
-// Comment Button
-input[value="add comment"] {
-	-webkit-appearance: none;	// Removes default button styling
-
-	font: {
-		family: SourceSansPro, Source Sans Pro;
-		size: 2rem;
-	}
-	color: $subtext;
-	padding: 1rem;
-	border: 2px solid $subtext;
-	background-color: $background;
-
-	&:hover {
-		cursor: pointer;
-		color: white;
-		border-color: black;
-		background-color: $title;
-	}
-}
 // Layout
 
 // The Container
 
 
 // Grid is 960px
-// Optimal line length based on 90 characters per line is 820px
-// 70px padded (via margins) on left and right side
+// Optimal line length based on 90 characters per line is 860px
+// 100px padded (via margins) on left and right side
+
+center {
+	display: block;
+	margin: 0 auto;
+	max-width: 96rem;
+}
 
 table[width='85%'] {
 	background-color: $background;
@@ -256,7 +66,7 @@ table[width='85%'] {
 
 	border-left: {
 		width: 5rem;
-		color: $background;
+		color: $background;	
 		style: solid;
 	}
 
@@ -267,114 +77,11 @@ table[width='85%'] {
 	}
 }
 
-
-td[bgcolor="#ff6600"] {
-	position: absolute;
-	width: 100%;
-	left: 0px;
-
-	table {
-		max-width: 96rem;
-		margin: 0 auto;
-	}	
-}
-
-center {
-	display: block;
-	margin: 0 auto;
-	max-width: 96rem;
-}
-
-// Orange Header 
-
-
-// Increase Spacing between Header and Page Content
-// Selects the title class and pads the top of every title by 20px
-td.title {
-	display: block;
-	padding-top: 1.8rem;
-}
-
-
-// Pads between votearrow and thread title
-.votearrow {
-	margin: {
-		right: 2rem;
-		left: 0;
-		top: 0;
-		bottom: 0;
-	}
-}
-
-// Pads between comments
-.default {
-	padding: {
-		top: 2rem;
-	}
-}
-
-// Pads between vote arrow and thread number
-.title:nth-child(1) {
-	padding-right: 2rem;
-}
-
-// Adds padding to the subtext below the titles
-// For main page, title text is 3rd child
-// For thread page, title text is 2nd child
-
-.title:nth-child(3), .title:nth-child(2) {
-	padding-bottom: 0.5rem;
-	padding-right: 5rem;
-}
-
-
-// Pads the username text above comments 
-span.comment {
-	display: block;
-	padding-top: 0.5rem;
-}
-
+// Moves thread title down to prevent overlap with header
 tr[style="height:10px"]:nth-child(2) {
 	height: 9rem !important;
 }
 
 tr[style="height:10px"]:last-child {
-	height: 4rem !important;
-}
-
-// Within the username text above comments, pads the words
-.comhead {
-	// username
-	a:nth-child(1) {
-		padding-right: 0.3rem;
-	}
-	// 'link'
-	a:nth-child(2) {
-		padding-left: 0.2rem; 
-	}
-}
-
-// Pads between paragraphs:
-p{
-	font-size: 2.2rem;
-	padding-top: 1rem;
-}
-
-td {
-	font-size: 2.2rem;
-}
-
-// Overflows code that exceeds line-lengths
-// Pads code samples
-pre {
-	overflow: auto;
-	padding: {
-		left:1rem;
-		bottom: 1.5rem;
-	}
-	max-width:800px;
-}
-
-pre:hover {
-	overflow:auto;
+	height: 0rem !important;
 }

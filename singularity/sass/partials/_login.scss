@@ -1,0 +1,53 @@
+body[alink="#0000be"] {
+	background-color: $background;
+	width: 35%;
+	margin: 0 auto;
+
+	b {
+		display: block;
+		font: {
+			size: 5rem;
+			weight: 300;
+		}
+
+		padding: 2rem 0 2rem 0;
+	}
+}
+
+body[alink="#0000be"]::before {
+	// Injects the "Y" 
+	display: block; 
+	content: "Y";
+	color: $title;
+	font: {
+		size: 2.2rem;
+		weight: 400;
+	}
+
+	// Box around "Y"
+	border: {
+		width: 0.2rem;
+		style: solid;
+		color: $title;
+		radius: 25%;
+	}
+
+	// Padding around box to generate logo
+	padding: {
+		top: 1rem;
+		bottom: 1rem;
+		left: 2rem;
+		right: 2rem;
+	}	
+
+	// Space above and below "Y" to generate header height
+	margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+
+
+input[value="login"], input[value="create account"]{
+	@extend input[value="add comment"];
+	width: 20rem;
+}
+

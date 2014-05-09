@@ -1,0 +1,45 @@
+
+// Comment Box
+
+textarea[name="text"] {
+	display: block;
+	overflow: scroll;
+	resize: vertical;
+	border: 2px solid #dedede;
+	width: 86rem;
+	height: 14rem;
+	margin-top: 2rem;
+	font: {
+		family: Source Code Pro;
+		size: 1.8rem;
+	}
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border: 0.2rem solid $hn-orange;
+}
+
+// Comment Button
+input[value="add comment"] {
+	-webkit-appearance: none;	// Removes default button styling
+
+	font: {
+		family: SourceSansPro, Source Sans Pro;
+		size: 2rem;
+	}
+	color: $subtext;
+	// Pads around button text
+	padding: 1rem;
+	border: 2px solid $subtext;
+	background-color: $background;
+
+	&:hover {
+		cursor: pointer;
+		color: white;
+		border-color: black;
+		background-color: $title;
+	}
+
+	margin: 3rem 0 4rem 0;
+}
