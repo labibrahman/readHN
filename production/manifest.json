@@ -15,16 +15,16 @@
 
 // JS to swap out CSS files
 "js" : [ 
-	"singularity/javascripts/jquery.min.js", 
-	"singularity/javascripts/swapcss.js"],
+	"javascripts/jquery.min.js", 
+	"javascripts/swapcss.js"],
 
 "run_at": "document_start"
 } ],
 
 // Allows JS to reach singularity/stylesheets/ and singularity/javascripts
 "web_accessible_resources": [
-	"singularity/stylesheets/*",
-	"singularity/javascripts/*",
+	"readhackernews.css",
+	"javascripts/*",
 	"typefaces/*"]
 }
 

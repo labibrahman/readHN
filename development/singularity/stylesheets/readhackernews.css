@@ -402,29 +402,29 @@ form[action="/y"] > table > tbody > tr > td > input:-webkit-autofill:focus, form
   border-color: #ff6600;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 16, ../sass/readhackernews.scss */
 html {
   font-size: 62.5%;
   font-family: Source Sans Pro, SourceSansPro;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 23, ../sass/readhackernews.scss */
 body {
   width: 100%;
   background: #f1f1f1;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 29, ../sass/readhackernews.scss */
 a {
   text-decoration: none;
   color: #222222;
 }
-/* line 33, ../sass/style.scss */
+/* line 33, ../sass/readhackernews.scss */
 a:visited {
   color: #222222;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 39, ../sass/readhackernews.scss */
 .votearrow {
   width: 0;
   height: 0;
@@ -433,14 +433,14 @@ a:visited {
   border-bottom: 8px solid gray;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 57, ../sass/readhackernews.scss */
 center {
   display: block;
   margin: 0 auto;
   max-width: 96rem;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 63, ../sass/readhackernews.scss */
 table[width='85%'] {
   background-color: #f1f1f1;
   width: 100% !important;

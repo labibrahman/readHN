@@ -1,7 +1,7 @@
 /* Sequence of Events:
 	1. On document start, display: hidden of body
 	2. Remove PG's CSS
-	3. Then add the readhackernews.CSS
+	3. Then add the readhackernews css
 	4. Finally, set body to display block 
 	*/
 
@@ -12,15 +12,15 @@ $('.fouc').css('display', 'none');
 
 jQuery(function($) {
 	
-	// Remove PG's CSS
+	// Step 2:
 	var links = document.getElementsByTagName('link');
 	for(var i=0; i<links.length; i++) {
 		links[i].getAttribute('rel') === 'stylesheet' && links[i].remove();
 	}
 
-	// Step 2:
+	// Step 3:
 	var link = document.createElement('link');
-	link.href =  chrome.extension.getURL('singularity/stylesheets/style.css');
+	link.href =  chrome.extension.getURL('readhackernews.css');
 	link.rel = 'stylesheet';
 	document.documentElement.insertBefore(link);
 
