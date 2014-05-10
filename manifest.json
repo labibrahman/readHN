@@ -30,7 +30,8 @@
 // Allows JS to reach singularity/stylesheets/ and singularity/javascripts
 "web_accessible_resources": [
 	"singularity/stylesheets/*",
-	"singularity/javascripts/*"],
+	"singularity/javascripts/*",
+	"typefaces/*"],
 
 // Allows font import from Google Fonts to pass through CORS restrictions
 "content_security_policy": "script-src 'self' https://fonts.googleapis.com; object-src 'self'"
