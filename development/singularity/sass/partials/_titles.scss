@@ -7,11 +7,15 @@ tr[style="height:10px"]:last-child {
 	height: 0rem !important;
 }
 
-
 // Selects the title class and pads the top of every title by 20px
 td.title {
 	display: block;
 	padding-top: 1.8rem;
+}
+
+// Pads between title and content on self posts 
+tr[style="height:2px"] {
+	height: 2rem !important;
 }
 
 // Controls thread titles on main page, and actual threads

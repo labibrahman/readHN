@@ -1,18 +1,21 @@
 
 // Comment Box
 
-textarea[name="text"] {
+textarea {
 	display: block;
-	overflow: scroll;
-	resize: vertical;
 	border: 2px solid #dedede;
-	width: 86rem;
-	height: 14rem;
-	margin-top: 2rem;
 	font: {
 		family: Source Code Pro;
 		size: 1.8rem;
 	}
+}
+
+textarea[name="text"]{
+	width: 86rem;
+	height: 14rem;
+	margin-top: 2rem;
+	overflow: scroll;
+	resize: vertical;
 }
 
 input:focus, textarea:focus {

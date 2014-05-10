@@ -48,7 +48,7 @@ form[action="/y"]> table > tbody > tr > td,  form[action="/x"]> table > tbody > 
 	> input:-webkit-autofill {
 		margin-top: 2rem;
 		-webkit-box-shadow: 0 0 0 1000px white inset !important;
-		border: 2px solid $subtext;
+		border: 2px solid #dedede;
 		height: 3rem;
 		width: 20rem;
 		font: {

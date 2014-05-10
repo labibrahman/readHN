@@ -1,0 +1,41 @@
+<html><head><link rel="stylesheet" type="text/css" href="../singularity/stylesheets/readhackernews.css">
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript">
+  function byId(id) {
+    return document.getElementById(id);
+  }
+
+  function vote(node) {
+  var v = node.id.split(/_/);   // {'up', '123'}
+  var item = v[1];
+
+  // hide arrows
+  byId('up_'   + item).style.visibility = 'hidden';
+  byId('down_' + item).style.visibility = 'hidden';
+
+  // ping server
+  var ping = new Image();
+  ping.src = node.href;
+
+  return false; // cancel browser nav
+} </script><title>Profile: L_Rahman | Hacker News</title></head><body><center><table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef><tr><td bgcolor=#ff6600><table border=0 cellpadding=0 cellspacing=0 width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://ycombinator.com"><img src="y18.gif" width=18 height=18 style="border:1px #ffffff solid;"></img></a></td><td style="line-height:12pt; height:10px;"><span class="pagetop"><b><a href="news">Hacker News</a></b><img src="s.gif" height=1 width=10><a href="newest">new</a> | <a href="threads?id=L_Rahman">threads</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a></span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop"><a href="user?id=L_Rahman">L_Rahman</a>&nbsp;(253)&nbsp;|&nbsp;<a href="logout?whence=%75%73%65%72%3f%69%64%3d%4c%5f%52%61%68%6d%61%6e">logout</a></span></td></tr></table></td></tr><tr style="height:10px"></tr><tr><td><form method=post action="/x"><input type=hidden name="fnid" value="oj67y8tziMXUjXgqJWIUrK"><table border=0><tr><td valign=top>user:</td><td>L_Rahman</td></tr>
+<tr><td valign=top>created:</td><td>280 days ago</td></tr>
+<tr><td valign=top>karma:</td><td>253</td></tr>
+<tr><td valign=top>avg:</td><td>3.02</td></tr>
+<tr><td valign=top>about:</td><td><textarea cols=60 rows=5 wrap=virtual name="about">
+</textarea> <font size=-2><a href="formatdoc"><font color=#afafaf>help</font></a></font></td></tr>
+<tr><td valign=top>email:</td><td><input type=text name="email" value="mohd.labib.rahman@gmail.com" size=60></td></tr>
+<tr><td valign=top>showdead:</td><td><select name="showdead"><option selected>yes</option><option>no</option></select></td></tr>
+<tr><td valign=top>noprocrast:</td><td><select name="noprocrast"><option>yes</option><option selected>no</option></select></td></tr>
+<tr><td valign=top>maxvisit:</td><td><input type=text name="maxvisit" value="20" size=16></td></tr>
+<tr><td valign=top>minaway:</td><td><input type=text name="minaway" value="180" size=16></td></tr>
+<tr><td valign=top>topcolor:</td><td><input type=text name="topcolor" value="ff6600"></td></tr>
+<tr><td valign=top>delay:</td><td><input type=text name="delay" value="0" size=16></td></tr>
+<tr><td></td><td><a href="changepw"><u>change password</u></a></td></tr>
+<tr><td></td><td><a href="saved?id=L_Rahman"><u>saved stories</u></a></td></tr>
+<tr><td></td><td><a href="submitted?id=L_Rahman"><u>submissions</u></a></td></tr>
+<tr><td></td><td><a href="threads?id=L_Rahman"><u>comments</u></a></td></tr>
+</table><br>
+<input type=submit value="update"></form><br><br>
+</td></tr></table></center></body></html>
