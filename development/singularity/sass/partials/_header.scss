@@ -69,6 +69,7 @@ td[style="width:18px;padding-right:4px"] {
 
 // Selects header and makes it as wide as the page. 
 td[bgcolor="#ff6600"] {
+	background-color: $hn-orange !important;
 	position: absolute;
 	width: 100%;
 	left: 0px;

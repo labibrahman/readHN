@@ -20,10 +20,10 @@ body[alink="#0000be"]::before {
 	text-align: center;
 	content: "Hacker News";
 	color: white;
-	background: $title;
+	background: $hn-orange;
 	font: {
 		size: 8rem !important;
-		weight: 300;
+		weight: 600;
 	}
 
 	padding: 2rem 0 2rem 0;
