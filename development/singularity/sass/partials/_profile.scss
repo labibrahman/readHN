@@ -1,8 +1,14 @@
 
-// Aligns field names 
+
 form[action="/x"]> table > tbody > tr > td[valign="top"] {
+
+	// Aligns field names
 	vertical-align: top;
 	padding-bottom: 0.8rem;
+}
+
+form[action="/x"]> table > tbody > tr > td {
+	max-width: 76rem;
 }
 
 
@@ -26,6 +32,7 @@ textarea[name="about"] {
 }
 
 
+
 input[name="email"] {
 	@extend textarea;
 	margin-top: 0.2rem;
@@ -38,21 +45,23 @@ input[name="maxvisit"], input[name="minaway"], input[name="topcolor"], input[nam
 	width: 10rem;
 }
 
+// 
 select, option{
-    font-size: 1.6rem;
-    border: 3px solid #dedede;
-    border-radius: 0;
-    color: black;
-    padding: 0.5rem;
-    -webkit-appearance: none;
-    background-color: white;
-    background-transparency: 0.5;
-    background-position: right 15px top 22px;
-    background-size: 18px 18px;
+	font-size: 1.6rem;
+	border: 3px solid #dedede;
+	border-radius: 0;
+	color: black;
+	padding: 0.5rem;
+	-webkit-appearance: none;
+	background-color: white;
+	background-transparency: 0.5;
+	background-position: right 15px top 22px;
+	background-size: 18px 18px;
 }
 select:active {
-    border: 1px solid #000;
+	border: 1px solid #000;
 }
+
 
 input[value="update"] {
 	@extend input[value="add comment"];

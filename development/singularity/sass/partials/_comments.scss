@@ -11,6 +11,11 @@ br {
 	display: none;
 }
 
+// Pads top of commments section from title
+table[width="85%"] > tbody > tr:nth-child(3) > td > table[border="0"]:nth-child(1) {
+	margin-bottom: 4rem !important;
+}
+
 
 // Comment Body
 .comment {
@@ -39,6 +44,7 @@ br {
 		padding-left: 0.2rem; 
 	}
 }
+
 
 // Pads the username text above comments 
 span.comment {
