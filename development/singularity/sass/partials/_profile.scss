@@ -5,6 +5,8 @@ form[action="/x"]> table > tbody > tr > td[valign="top"] {
 	// Aligns field names
 	vertical-align: top;
 	padding-bottom: 0.8rem;
+
+
 }
 
 form[action="/x"]> table > tbody > tr > td {
@@ -12,9 +14,16 @@ form[action="/x"]> table > tbody > tr > td {
 }
 
 
-// Pads top of profile from header
+
 form[action="/x"] {
+	// Pads top of profile from header
 	padding-top: 2rem;
+
+	// Pads links from bottom of profile text
+	a[href*="submitted?id="],  a[href*="threads?id="], a[href="changepw"], a[href*="saved?id="]{
+		display: block;
+		padding-top: 1rem;
+	}
 }
 
 // Formatting help link under "about"
@@ -67,4 +76,5 @@ input[value="update"] {
 	@extend input[value="add comment"];
 	padding-left: 5rem;
 	padding-right: 5rem;
+	margin-bottom: 5rem;
 }

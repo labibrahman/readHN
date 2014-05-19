@@ -3,7 +3,7 @@
 "name": "readhackernews",
 "manifest_version": 2,
 "version": "0.0.2",
-
+"icons": {"128" : "assets/readHNextensionlogo.png"},
 // Give it a useful description
 "description": "An extension to make Hacker News more readable",
 
