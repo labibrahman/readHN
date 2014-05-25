@@ -61,8 +61,10 @@ center {
 	max-width: 96rem;
 }
 
+
 table[width='85%'] {
 	background-color: $background;
+	max-width: 86rem;
 	width: 100% !important;
 
 	border-left: {
@@ -77,5 +79,19 @@ table[width='85%'] {
 		style: solid;
 	}
 }
+
+
+html > body > center > table > tbody > tr:nth-child(3) > td {
+	table[border="0"] {
+		table-layout: fixed;
+		max-width: 86rem;
+	}
+}
+
+html > body > center > table > tbody > tr:last-child {
+	display: block;
+
+}
+
 
 
