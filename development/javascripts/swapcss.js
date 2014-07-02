@@ -20,7 +20,7 @@ jQuery(function($) {
 
 	// Step 2:
 	var link = document.createElement('link');
-	link.href =  chrome.extension.getURL('singularity/stylesheets/readhackernews.css');
+	link.href =  chrome.extension.getURL('singularity/stylesheets/readHN.css');
 	link.rel = 'stylesheet';
 	document.documentElement.insertBefore(link);
 

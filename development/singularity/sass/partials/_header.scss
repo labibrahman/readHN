@@ -41,7 +41,7 @@ img[src*="y18.gif"] {
 // Done by injecting HTML
 
 td[style="width:18px;padding-right:4px"] {
-	a[href="http://ycombinator.com"]::before {
+	a[href="http://www.ycombinator.com"]::before {
 		// Injects the "Y" 
 		display: block; 
 		content: "Y";
