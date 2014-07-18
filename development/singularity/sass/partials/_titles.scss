@@ -38,6 +38,12 @@ tr[style="height:2px"] {
 	color: $subtext;
 }
 
+// Make the thread points a darker grey
+span[id^="score_"] {
+    color: $subtext;
+    font-weight: 400;
+}
+
 // Controls the text below thread titles that contains username, points, comment links
 // Controls url stubs at the end of thread titles
 .subtext, .comhead {
@@ -94,5 +100,3 @@ tr[style="height:2px"] {
 .title:nth-child(1) {
 	padding-right: 2rem;
 }
-
-
